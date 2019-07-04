@@ -153,6 +153,58 @@ ButtonAddition.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                mValueOne=Float.parseFloat(result.getText()+"");
                Subtract=true;
+           result.setText(null);
+
+            }
+        });
+        ButtonMultiplicatio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne=Float.parseFloat(result.getText()+"");
+                Multiplication=true;
+                result.setText(null);
+            }
+        });
+
+        ButtonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne=Float.parseFloat(result.getText()+"");
+                Division=true;
+                result.setText(null);
+            }
+        });
+
+        ButtonEqual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Addition == true) {
+                    result.setText(mValueOne + mValueTwo + "");
+                    Addition = false;
+
+                }
+                if (Subtract == true) {
+                    result.setText(mValueOne - mValueTwo + "");
+                    Subtract = false;
+
+                }
+
+                if (Multiplication == true) {
+                    result.setText(mValueOne * mValueTwo + "");
+                    Multiplication = false;
+                }
+                if (Division==true){
+                    result.setText((mValueOne/mValueTwo+""));
+                    Division=false;
+                }
+            }
+
+        });
+
+        ButtonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.setText("");
 
             }
         });
