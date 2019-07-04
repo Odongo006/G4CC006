@@ -70,14 +70,14 @@ public class MainActivity extends AppCompatActivity {
         ButtonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ButtonOne.setText(ButtonOne.getText()+"1");
+                result.setText(result.getText()+"1");
             }
         });
 
         ButtonTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ButtonTwo.setText(ButtonTwo.getText()+"2");
+                result.setText(result.getText()+"2");
             }
         });
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         ButtonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ButtonThree.setText(ButtonThree.getText()+"3");
+                result.setText(result.getText()+"3");
 
             }
         });
@@ -93,45 +93,45 @@ public class MainActivity extends AppCompatActivity {
         ButtonFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              ButtonFour.setText(ButtonFour.getText()+"4");
+              result.setText(result.getText()+"4");
 
             }
         });
 ButtonFive.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonFive.setText(ButtonFive.getText()+"5");
+        result.setText(result.getText()+"5");
     }
 });
 ButtonSix.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonSix.setText(ButtonSix.getText()+"6");
+        result.setText(result.getText()+"6");
     }
 });
 ButtonSeven.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonSeven.setText(ButtonSeven.getText()+"7");
+        result.setText(result.getText()+"7");
     }
 });
 ButtonEight.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonEight.setText(ButtonEight.getText()+"8");
+        result.setText(result.getText()+"8");
     }
 });
 ButtonNine.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonNine.setText(ButtonNine.getText()+"9");
+        result.setText(result.getText()+"9");
     }
 });
 
 ButtonZero.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        ButtonZero.setText(ButtonZero.getText()+"0");
+        result.setText(result.getText()+"0");
     }
 });
 ButtonAddition.setOnClickListener(new View.OnClickListener() {
@@ -208,5 +208,20 @@ ButtonAddition.setOnClickListener(new View.OnClickListener() {
 
             }
         });
+
+        ButtonDecimal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.setText(result.getText()+".");
+            }
+        });
+
+        ButtonPercentage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.setText(result.getText()+"%");
+            }
+        });
+
     }
 }
