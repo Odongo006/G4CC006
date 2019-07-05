@@ -19,7 +19,8 @@
             android:layout_height="170dp"
             android:id="@+id/et_result_id"
             android:gravity="end"
-            android:inputType=""/>
+            android:inputType=""
+            android:background="@color/colorBlue"/>
 
 
     </RelativeLayout>
