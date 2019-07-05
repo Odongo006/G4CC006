@@ -13,14 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhite">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/tv_display_id"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:id="@+id/et_result_id"
             android:gravity="end"
-            android:inputType=""
-            android:background="@color/colorBlue"/>
+            android:inputType="number"
+           android:background="@color/colorWhite"/>
 
 
     </RelativeLayout>
