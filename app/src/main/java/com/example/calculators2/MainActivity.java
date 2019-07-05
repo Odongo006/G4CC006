@@ -178,6 +178,7 @@ ButtonAddition.setOnClickListener(new View.OnClickListener() {
         ButtonEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mValueTwo=Float.parseFloat(result.getText()+"");
                 if (Addition == true) {
                     result.setText(mValueOne + mValueTwo + "");
                     Addition = false;
@@ -194,7 +195,7 @@ ButtonAddition.setOnClickListener(new View.OnClickListener() {
                     Multiplication = false;
                 }
                 if (Division==true){
-                    result.setText((mValueOne/mValueTwo+""));
+                    result.setText((mValueOne/mValueTwo + ""));
                     Division=false;
                 }
             }
